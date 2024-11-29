@@ -3,9 +3,12 @@
     <div class="row">
         <div class="col-md-6 mx-auto text-center bg-primary mt-5 p-5 rounded">
             <h1 id="location"></h1>
+            <%= city %>
             <ul class="list-group mt-3">
                 <li class="list-group-item" id="description"></li>
+                <%= description %>
                 <li class="list-group-item" id="temp"></li>
+                <%= temp %>
             </ul>
             <h1 class="mt-3">Change city</h1>
             <form id="change-city">
@@ -13,10 +16,11 @@
                     <label for="city-name">City</label>
                     <input type="text" id="city-name" class="form-control">
                 </div>
+                <br>
                 <input type="submit" class="btn btn-light" value="Save changes">
             </form>
         </div>
     </div>
-    
+
 </div>
 <%- include('footer') %>
